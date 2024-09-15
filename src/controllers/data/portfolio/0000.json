@@ -1,0 +1,14 @@
+{
+  "id": "porfolio-0000",
+  "src": "/images/vaughan-blog.png",
+  "locale": {
+    "es": {
+      "title": "Blog de Vaughan",
+      "alt": "Pantallazo del listado de posts de la página de recursos de vaughan"
+    },
+    "en": {
+      "title": "Vaughan's Blog",
+      "alt": "Screenshot of the post list in Vaughan's reosurces page"
+    }
+  }
+}
