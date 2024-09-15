@@ -1,14 +1,17 @@
 {
   "id": "porfolio-0000",
   "src": "/images/vaughan-blog.png",
+  "href": "https://aprendeingles.grupovaughan.com/blog-de-vaughan",
   "locale": {
     "es": {
       "title": "Blog de Vaughan",
-      "alt": "Pantallazo del listado de posts de la página de recursos de vaughan"
+      "alt": "Pantallazo del listado de posts de la página de recursos de vaughan",
+      "extract": "[\"Plantillaje de la sección de recursos de Vaughan copiando el estilo de la versión anterior con diferentes temas de colores.\", \"Recreación del widget de radio con opciones antes no soportadas como la información del programa actual en tiempo real.\"]"
     },
     "en": {
       "title": "Vaughan's Blog",
-      "alt": "Screenshot of the post list in Vaughan's reosurces page"
+      "alt": "Screenshot of the post list in Vaughan's resources page",
+      "extract": "[\"Resources' Vaughan section templating copying and improving the previous one and the incorporation of different color themes.\", \"Radio widget remake with previously unsopported features as live current streaming information.\"]"
     }
   }
 }

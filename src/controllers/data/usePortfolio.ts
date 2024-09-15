@@ -3,12 +3,14 @@ import path from 'node:path';
 
 interface portfolioI18N {
   "title": string,
-  "alt": string
+  "alt": string,
+  "extract": string,
 }
 
 interface portfolioType {
   "id": string,
   "src": string,
+  "href": string,
   "locale": {
     "es": portfolioI18N,
     "en": portfolioI18N
