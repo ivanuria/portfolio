@@ -1,4 +1,4 @@
-import { getLocales as getLocalesPortfolio } from "./data/usePortfolio";
+import { getLocales as getLocalesPortfolio } from "../services/usePortfolio";
 
 export default function getLocales() {
   return getLocalesPortfolio();

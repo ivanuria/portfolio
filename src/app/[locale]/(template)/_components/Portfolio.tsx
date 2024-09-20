@@ -1,5 +1,5 @@
 import { useTranslations } from 'next-intl';
-import usePortfolio from '@/src/controllers/data/usePortfolio';
+import usePortfolio from '@/src/services/usePortfolio';
 import {
   Box,
   Button,
