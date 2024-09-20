@@ -1,21 +1,13 @@
-export interface portfolioI18N {
-  'title': string,
-  'alt': string,
-  'extract': string,
-}
+import {
+  PortfolioSchema,
+  LocaleSchema,
+  LocaleDataSchema
+} from '../validations/portfolio';
+import zod from 'zod';
 
-export interface localeType {
-  'es': portfolioI18N,
-  'en': portfolioI18N
-}
-
-export interface portfolioType {
-  'id': string,
-  'src': string,
-  'href': string,
-  'locale': localeType,
-}
-
-export type localeItem = {
+export type portfolioI18N = zod.infer<typeof LocaleDataSchema>;
+export type localeType = zod.infer<typeof LocaleSchema>;
+export type portfolioType = zod.infer<typeof PortfolioSchema>;
+export interface localeItem {
   [key:string]: portfolioI18N
 };

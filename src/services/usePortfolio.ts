@@ -1,20 +1,15 @@
 import data from '@/data/portfolio';
 import {
-  portfolioType,
-  localeItem
+  portfolioType
 } from '@/src/types/portfolio';
-
-export interface locales {
-  "es": localeItem,
-  "en": localeItem
-}
+import { LocalesType } from '@/src/types/locales';
 
 export function getFiles(): portfolioType[] {
   return data;
 }
 
-export function getLocales() : locales {
-  const final:locales = {
+export function getLocales(): LocalesType {
+  const final:LocalesType = {
     es: {},
     en: {}
   };

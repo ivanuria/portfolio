@@ -6,16 +6,18 @@ import { routing } from './routing';
 import deepmerge from 'deepmerge';
 
 import getLocales from './controllers/getLocales';
+import { Locales, LocalesType } from './types/locales';
+
 const controllersMessages = getLocales();
-type localeType = 'es' | 'en';
 
 export default getRequestConfig(async ({ locale }) => {
   // Validate that the incoming `locale` parameter is valid
-  if (!routing.locales.includes(locale as any)) notFound();
-  const messages = (await import(`../messages/${locale}.json`)).default;
+  if (!routing.locales.includes(locale as Locales)) notFound();
+  // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
+  const messages = (await import(`../messages/${locale}`)).default as LocalesType;
   const final = deepmerge.all([
     messages,
-    controllersMessages[locale as localeType]
+    controllersMessages[locale as Locales]
   ]);
   return { messages: final as AbstractIntlMessages };
 });
