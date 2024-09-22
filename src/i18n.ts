@@ -8,7 +8,7 @@ import deepmerge from 'deepmerge';
 import getLocales from './controllers/getLocales';
 import { Locales, LocalesType } from './types/locales';
 
-const controllersMessages = getLocales();
+const controllersMessages = await getLocales();
 
 export default getRequestConfig(async ({ locale }) => {
   // Validate that the incoming `locale` parameter is valid
